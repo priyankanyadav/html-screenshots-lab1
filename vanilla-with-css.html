@@ -1,0 +1,116 @@
+<!--
+    Developer Name: Priyanka Yadav
+    Purpose: Displaying HTTP and network tool screenshots using styled HTML
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Gallery of HTTP responses and network tool screenshots"
+    />
+    <title>HTTP & Network Screenshots</title>
+    <style>
+      .card {
+        margin: 50px auto;
+        padding: 20px;
+        background-color: white;
+        border: 2px solid gray;
+        border-radius: 15px;
+        box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+        font-family: sans-serif;
+        text-align: center;
+        width: 80%;
+        max-width: 700px;
+      }
+
+      .card img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <h2>GET 200 - Success</h2>
+      <p>Request returned a 200 OK status indicating success.</p>
+      <img src="../method-get-http-code-200.png" alt="GET 200 OK" />
+    </div>
+
+    <div class="card">
+      <h2>POST 201 - Created</h2>
+      <p>POST request returned 201 Created, indicating resource creation.</p>
+      <img src="../method-post-http-code-201.png" alt="POST 201 Created" />
+    </div>
+
+    <div class="card">
+      <h2>GET 400 - Bad Request</h2>
+      <p>Request could not be understood by server due to malformed syntax.</p>
+      <img src="../method-get-http-code-400.png" alt="GET 400 Bad Request" />
+    </div>
+
+    <div class="card">
+      <h2>GET 401 - Unauthorized</h2>
+      <p>Authentication is required, returned 401 Unauthorized.</p>
+      <img src="../method-get-http-code-401.png" alt="GET 401 Unauthorized" />
+    </div>
+
+    <div class="card">
+      <h2>GET 403 - Forbidden</h2>
+      <p>Valid request but action is not allowed, returned 403 Forbidden.</p>
+      <img src="../method-get-http-code-403.png" alt="GET 403 Forbidden" />
+    </div>
+
+    <div class="card">
+      <h2>GET 404 - Not Found</h2>
+      <p>Requested resource does not exist, server returned 404.</p>
+      <img src="../method-get-http-code-404.png" alt="GET 404 Not Found" />
+    </div>
+
+    <div class="card">
+      <h2>GET 500 - Internal Server Error</h2>
+      <p>Server encountered an error and returned 500 status.</p>
+      <img
+        src="../method-get-http-code-500.png"
+        alt="GET 500 Internal Server Error"
+      />
+    </div>
+
+    <div class="card">
+      <h2>IP Address Lookup</h2>
+      <p>Shows ISP and location data from IP2Location.</p>
+      <img src="../IPAddressLookup.png" alt="IP Address Lookup" />
+    </div>
+
+    <div class="card">
+      <h2>Check Website Availability</h2>
+      <p>Displays the website uptime and response status.</p>
+      <img
+        src="../check-website-availability.png"
+        alt="Check Website Availability"
+      />
+    </div>
+
+    <div class="card">
+      <h2>Ping Website</h2>
+      <p>Measures response time and packet loss for website.</p>
+      <img src="../ping-availability.png" alt="Ping Website" />
+    </div>
+
+    <div class="card">
+      <h2>DNS Analysis</h2>
+      <p>Shows domain's DNS records and resolution path.</p>
+      <img src="../dns-analysis.png" alt="DNS Analysis" />
+    </div>
+
+    <div class="card">
+      <h2>Traceroute</h2>
+      <p>Displays number of hops taken to reach domain.</p>
+      <img src="../traceroute.png" alt="Traceroute" />
+    </div>
+  </body>
+</html>

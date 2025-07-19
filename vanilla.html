@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Enter a description by modifying the content attribute -->
+    <meta
+      name="description"
+      content="Gallery of HTTP status codes and network tool screenshots"
+    />
+    <!-- Modify title tag -->
+    <title>HTTP Status & Network Tools Gallery</title>
+    <style>
+      .card {
+        margin: 50px auto;
+        padding: 20px;
+        background-color: white;
+        border: 2px solid gray;
+        border-radius: 15px;
+        box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+        font-family: sans-serif;
+        text-align: center;
+        transition: all 0.3s ease;
+        cursor: pointer;
+        width: 80%;
+        max-width: 700px;
+      }
+
+      .card img {
+        max-width: 100%;
+        height: auto;
+        max-height: 400px; /* limits max height */
+        object-fit: contain;
+        border-radius: 8px;
+      }
+
+      .active {
+        background-color: lightyellow;
+        box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.3);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Example card -->
+    <div class="card">
+      <h2>GET 200 - Success</h2>
+      <p>Request returned a 200 OK status indicating success.</p>
+      <img src="method-get-http-code-200.png" alt="GET 200 OK" />
+    </div>
+
+    <div class="card">
+      <h2>POST 201 - Created</h2>
+      <p>POST request returned 201 Created, indicating resource creation.</p>
+      <img src="method-post-http-code-201.png" alt="POST 201 Created" />
+    </div>
+
+    <!-- Add more cards for all your screenshots similarly -->
+
+    <script>
+      // Add click toggle to highlight cards
+      const cards = document.querySelectorAll(".card");
+      cards.forEach((card) => {
+        card.addEventListener("click", () => {
+          card.classList.toggle("active");
+        });
+      });
+    </script>
+  </body>
+</html>
